@@ -1,13 +1,21 @@
 import './App.css';
+import BottomNavbar from './components/navbar'
 
 
+  
 function App() {
-  const now = new Date()
-  return (
-    <div className="App">
-      <p>Hello world, it is {now.toString()}rptm</p>
-    </div>
+  
+  return( 
+    <div className="container">
+
+      <BottomNavbar/>       
+
+            </div> 
+
   );
+    
+  
+  
 }
 
 export default App;
