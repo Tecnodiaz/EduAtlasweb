@@ -6,9 +6,9 @@ function BottomNavbar() {
 <>
     <Styledtopnavbar>
 <div class="topnav" id="myTopnav">
-  <a href="#home" class="active">Tareas</a>
-  <a href="#news" class="active">Muro</a>
-  <a href="#contact" class="active" >Calificaciones</a>
+  <a href="#home" >Tareas</a>
+  <a href="#news" >Muro</a>
+  <a href="#contact" >Calificaciones</a>
   
  
     
