@@ -1,23 +1,32 @@
 import {  Nav,Navbar} from 'react-bootstrap';
 import  '../index.css';
-import { Styledbottomnavbar} from './styles'
+import { Styledbottomnavbar, Styledtopnavbar } from './styles'
 function BottomNavbar() {
   return (
-
+<>
+    <Styledtopnavbar>
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Tareas</a>
+  <a href="#news" class="active">Muro</a>
+  <a href="#contact" class="active" >Calificaciones</a>
+  
+ 
     
+</div>
+    </Styledtopnavbar>
+
+
     <Styledbottomnavbar>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className="sticky-nav">
   
-  <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+  <Navbar.Brand href="#home">Home</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className='ml-auto'>
-      <Nav.Link href="#features" >Features</Nav.Link>
-      <Nav.Link href="#pricing">Pricing</Nav.Link>
-      <Nav.Link href="#deets">More deets</Nav.Link>
-      <Nav.Link eventKey={2} href="#memes">
-        Dank memes
-      </Nav.Link>
+      <Nav.Link href="#features" >Libreria</Nav.Link>
+      <Nav.Link href="#pricing">Asistencia</Nav.Link>
+      <Nav.Link href="#deets">Horario</Nav.Link>
+      <Nav.Link href="#Perfil">Perfil</Nav.Link>
     </Nav>
    
   </Navbar.Collapse>
@@ -27,7 +36,7 @@ function BottomNavbar() {
     </Styledbottomnavbar>
 
 
-         
+    </>
    
     
     );
