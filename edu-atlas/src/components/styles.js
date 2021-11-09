@@ -63,3 +63,31 @@ export const Styledtopnavbar = styled.nav`
     -webkit-box-shadow: none;
     box-shadow: none;
   }   `
+
+  export const Tareashome=styled.div`
+  position: absolute;
+  width: 258px;
+  height: 328px;
+  left: 33px;
+  top: 270px;
+  
+  background: #FFFFFF;
+  border: 2px solid #03BFD3;
+  box-sizing: border-box;
+  border-radius: 8px;
+    `
+    export const Tareas=styled.ul`  
+    list-style: none; 
+
+    
+width: 223px;
+height: 63px;
+;
+
+
+
+background: #FFFFFF;
+border: 1px solid #C4C4C4;
+box-sizing: border-box;
+border-radius: 9px;
+    `

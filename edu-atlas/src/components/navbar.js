@@ -1,6 +1,7 @@
 import {  Nav,Navbar} from 'react-bootstrap';
 import  '../index.css';
-import { Styledbottomnavbar, Styledtopnavbar } from './styles'
+import { Styledbottomnavbar, Styledtopnavbar,Tareashome,Tareas } from './styles'
+
 function BottomNavbar() {
   return (
 <>
@@ -14,6 +15,15 @@ function BottomNavbar() {
     
 </div>
     </Styledtopnavbar>
+
+    <Tareashome>
+      <h1>Tareas del mes</h1>
+      <Tareas> 
+        <li classname="list-tareas-nombre">Nombre de la tarea</li>
+        <li></li>
+        <li></li>
+         </Tareas>
+    </Tareashome>
 
 
     <Styledbottomnavbar>
