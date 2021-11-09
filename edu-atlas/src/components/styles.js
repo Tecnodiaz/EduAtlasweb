@@ -33,7 +33,7 @@ export const Styledbottomnavbar = styled.nav`
   }
  `
 export const Styledtopnavbar = styled.nav`
-  background-color: #ffffff;
+  background-color: #f5f5f5;
   border-bottom: 2px solid #03BFD3;
   position: fixed;
   left: 0;

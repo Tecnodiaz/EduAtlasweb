@@ -7,7 +7,7 @@ function BottomNavbar() {
     <Styledtopnavbar>
 <div class="topnav" id="myTopnav">
   <a href="#home" >Tareas</a>
-  <a href="#news" >Muro</a>
+  
   <a href="#contact" >Calificaciones</a>
   
  
