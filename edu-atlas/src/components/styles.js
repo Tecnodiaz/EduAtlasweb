@@ -32,31 +32,3 @@ export const Styledbottomnavbar = styled.nav`
     box-shadow: none;
   }
  `
-  export const StyledbottomnavbarItem = styled.div`
-    display: inline-block;
-    margin-right: 15px;
-    &:last-child {
-      margin-right: 0;
-    }
-    @media (max-width: 767px) {
-      margin-right: 0;
-      margin-bottom: 15px;
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }     
-  `
-  export const StyledbottomnavbarLink = styled.a`
-    display: inline-block;
-    color: #666;
-    text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 3px;
-    &:hover {
-      color: #333;
-      background-color: #f5f5f5;
-    }
-    @media (max-width: 767px) {
-      padding: 5px 10px;
-    }   
-  `
