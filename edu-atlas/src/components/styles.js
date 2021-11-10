@@ -33,7 +33,7 @@ export const Styledbottomnavbar = styled.nav`
   }
  `
 export const Styledtopnavbar = styled.nav`
-  background-color: #f5f5f5;
+  background-color: #fff;
   border-bottom: 2px solid #03BFD3;
   position: fixed;
   left: 0;
@@ -127,12 +127,12 @@ top: 12%;
 background: #FFFFFF;
 box-shadow: 2px 8px 4px rgba(0, 0, 0, 0.25);
 
-border-radius: 5px;
+border-radius: 7px;
 text-align:center;
 @media (max-width: 767px) {
   left: auto;
- width:auto;
-
+ width:90%;
+height:auto;
  
 }
     h1{
@@ -147,7 +147,7 @@ text-align:center;
     textarea{
       
     
-      width: 100%;
+      width: 98%;
       
 height: 137px;
 border-radius: 6px;
@@ -186,15 +186,28 @@ cursor: pointer;
 transition: all .3s;
 @media (max-width: 767px) {
   height:auto;
+  width:auto;
 }
 
     }
     
-
-
-
-
-    
-    
-      `
+`
   
+export const Styledposts = styled.div`
+position: absolute;
+width: 755px;
+height: 259px;
+left: 325px;
+top: 50%;
+
+background: #FFFFFF;
+border: 1px solid #AFAFAF;
+box-sizing: border-box;
+border-radius: 13px;
+text-align: center;
+@media (max-width: 767px) {
+  left: auto;
+ width:auto;
+ height:auto;
+}
+    `
