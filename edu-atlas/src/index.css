@@ -73,7 +73,7 @@ color: #000000;
   position: absolute;
 width: 25px;
 height: 15px;
-left: 62px;
+left: 73px;
 top: 367px;
 
 font-family: Roboto;
@@ -86,20 +86,23 @@ text-align: center;
 color: #000000;
 }
 .list-tareas-valor{
+
   position: absolute;
-width: 31px;
-height: 15px;
-left: 211px;
-top: 367px;
+  width: 31px;
+  height: 15px;
+  left: 211px;
+  top: 367px;
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  
+  color: #000000;
 
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 13px;
-line-height: 15px;
-text-align: center;
-
-color: #000000;
+  
 }
 .topnav a:hover {
 

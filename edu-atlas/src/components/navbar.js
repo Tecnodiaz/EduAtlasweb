@@ -18,11 +18,11 @@ function BottomNavbar() {
 
     <Tareashome>
       <h1>Tareas del mes</h1>
-      <Tareas> 
-        <li classname="list-tareas-nombre">Nombre de la tarea</li>
-        <li></li>
-        <li></li>
-         </Tareas>
+      <ul> 
+        <li >Ejercicios de pitagoras</li>
+        <li>2021-08-30</li>
+        <li >30pts</li>
+         </ul>
     </Tareashome>
 
 

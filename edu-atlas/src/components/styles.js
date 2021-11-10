@@ -66,28 +66,53 @@ export const Styledtopnavbar = styled.nav`
 
   export const Tareashome=styled.div`
   position: absolute;
-  width: 258px;
-  height: 328px;
-  left: 33px;
-  top: 270px;
+  top: 0;
+  left: 0;
   
-  background: #FFFFFF;
+  width: 258px;
+  height: 70%;
+  background-color: #fff;
+ 
+  
+  @media (max-width: 767px) { 
+    display: none;
+  }
+
+  left: 33px;
+  top:15%;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20);
   border: 2px solid #03BFD3;
   box-sizing: border-box;
-  border-radius: 8px;
-    `
-    export const Tareas=styled.ul`  
-    list-style: none; 
+  padding: 5px;
+border-radius: 8px;
+ 
 
+  ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      border-bottom: 1px solid #e5e5e5;
+      font-size: 14px;
+      font-weight: 500;
+      color: #666;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      &:last-child {
+        border-bottom: none;
+      
+      }
     
-width: 223px;
-height: 63px;
-;
+      
+      
 
 
-
-background: #FFFFFF;
-border: 1px solid #C4C4C4;
-box-sizing: border-box;
-border-radius: 9px;
+  }
     `
+  
