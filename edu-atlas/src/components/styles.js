@@ -104,6 +104,7 @@ border-radius: 8px;
       color: #666;
       text-transform: uppercase;
       letter-spacing: 1px;
+      
       &:last-child {
         border-bottom: none;
       
@@ -115,4 +116,85 @@ border-radius: 8px;
 
   }
     `
+
+    export const Styledposter = styled.div`
+    position: fixed;
+width: 752px;
+height: 29%;
+left: 328px;
+top: 12%;
+
+background: #FFFFFF;
+box-shadow: 2px 8px 4px rgba(0, 0, 0, 0.25);
+
+border-radius: 5px;
+text-align:center;
+@media (max-width: 767px) {
+  left: auto;
+ width:auto;
+
+ 
+}
+    h1{
+      margin: 0;
+      font-size: 24px;
+      font-weight: 500;
+     
+      
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+    textarea{
+      
+    
+      width: 100%;
+      
+height: 137px;
+border-radius: 6px;
+left: 348px;
+top: 320px;
+text-align: left;
+font-size: 14px;
+font-weight: 500;
+color: #666;
+background: #F6F6F6;
+letter-spacing: 1px;
+padding: 10px;
+box-sizing: border-box;
+-webkit-box-shadow: 0 -1px 0 rgba(0,0,0,.1);
+box-shadow: 0 -1px 0 rgba(0,0,0,.1);
+-webkit-transition: all .3s;
+transition: all .3s;
+    } 
+    button{
+      
+width: 90%;
+height: 36px;
+left: 806px;
+top: 491px;
+margin-top: 4px;
+background: #03BFD3;
+border-radius: 6px;
+
+border:none
+color: #fff;
+font-size: 14px;
+font-weight: 500;
+letter-spacing: 1px;
+cursor: pointer;
+-webkit-transition: all .3s;
+transition: all .3s;
+@media (max-width: 767px) {
+  height:auto;
+}
+
+    }
+    
+
+
+
+
+    
+    
+      `
   

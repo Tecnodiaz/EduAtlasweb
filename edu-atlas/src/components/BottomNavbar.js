@@ -1,30 +1,11 @@
 import {  Nav,Navbar} from 'react-bootstrap';
 import  '../index.css';
-import { Styledbottomnavbar, Styledtopnavbar,Tareashome,Tareas } from './styles'
+import { Styledbottomnavbar, } from './styles'
 
 function BottomNavbar() {
   return (
 <>
-    <Styledtopnavbar>
-<div class="topnav" id="myTopnav">
-  <a href="#home" >Tareas</a>
-  
-  <a href="#contact" >Calificaciones</a>
-  
- 
-    
-</div>
-    </Styledtopnavbar>
-
-    <Tareashome>
-      <h1>Tareas del mes</h1>
-      <ul> 
-        <li >Ejercicios de pitagoras</li>
-        <li>2021-08-30</li>
-        <li >30pts</li>
-         </ul>
-    </Tareashome>
-
+   
 
     <Styledbottomnavbar>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className="sticky-nav">

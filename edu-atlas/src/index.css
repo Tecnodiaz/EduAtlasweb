@@ -53,57 +53,7 @@ h1{
 }
 
 
-.list-tareas-nombre{
-  position: absolute;
-width: 111px;
-height: 15px;
-left: 73px;
-top: 331px;
-
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 13px;
-line-height: 15px;
-text-align: center;
-
-color: #000000;
-}
-.list-tareas-mes{
-  position: absolute;
-width: 25px;
-height: 15px;
-left: 73px;
-top: 367px;
-
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 13px;
-line-height: 15px;
-text-align: center;
-
-color: #000000;
-}
-.list-tareas-valor{
-
-  position: absolute;
-  width: 31px;
-  height: 15px;
-  left: 211px;
-  top: 367px;
-  
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 13px;
-  line-height: 15px;
-  text-align: center;
-  
-  color: #000000;
-
-  
-}
+/* Change the color of links on hover */
 .topnav a:hover {
 
 

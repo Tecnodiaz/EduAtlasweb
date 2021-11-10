@@ -1,5 +1,5 @@
 import './App.css';
-import BottomNavbar from './components/navbar'
+import Home from './components/Home'
 
 
   
@@ -8,7 +8,7 @@ function App() {
   return( 
     <div className="container">
 
-      <BottomNavbar/>       
+      <Home/>       
 
             </div> 
 
