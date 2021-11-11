@@ -224,6 +224,7 @@ h1{
 h2{
   float : right;
   margin: 0;
+  margin-right: 20px;
   font-size: 14px;
   font-weight: 500;
   color: #666;

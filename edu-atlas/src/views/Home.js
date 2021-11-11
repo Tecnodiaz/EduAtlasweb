@@ -38,7 +38,7 @@ function Home() {
 
                     </p>
                     <Styledpostcoment>
-                    <a href="http://">JP</a>
+                    <a href="http://tecnodiaz.com">JP</a>
                     <textarea placeholder="Escribe tu comentario" />
                     <button type="submit"><AiOutlineSend color="white" size="small" /></button>
                     </Styledpostcoment>
