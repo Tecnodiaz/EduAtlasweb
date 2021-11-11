@@ -132,6 +132,7 @@ border-radius: 7px;
 text-align:center;
 @media (max-width: 767px) {
   left: auto;
+  margin-left: 2px;
  width:90%;
 height:auto;
  
@@ -211,6 +212,8 @@ text-align: center;
   left: auto;
  width:auto;
  height:auto;
+ margin-left: -13px;
+ 
 }
 h1{
   margin: 0;
@@ -231,6 +234,9 @@ h2{
   letter-spacing: 1px;
  margin-top: -30px;
  cursor: pointer;
+ @media (max-width: 767px) {
+  display: none;
+ }
 }
 p{
   margin: 0;
@@ -278,9 +284,7 @@ box-sizing: border-box;
     border-radius: 10px;
     text-align: center;
     @media (max-width: 767px) {
-      
-    width:auto;
-    height:auto;
+      display:none
     
     }
     textarea{
@@ -315,6 +319,7 @@ right: 0;
 top: 805px;
 
 background: #03BFD3;
+
     }
     a{
      
