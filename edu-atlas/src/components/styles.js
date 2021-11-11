@@ -58,7 +58,7 @@ export const Styledtopnavbar = styled.nav`
   @media (max-width: 767px) {
     height: auto;
     padding: 15px;
-    font-size: 12px;
+    font-size: auto;
     text-align: center;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -205,9 +205,101 @@ border: 1px solid #AFAFAF;
 box-sizing: border-box;
 border-radius: 13px;
 text-align: center;
+
 @media (max-width: 767px) {
   left: auto;
  width:auto;
  height:auto;
 }
+h1{
+  margin: 0;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: left;
+  letter-spacing: 1px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+p{
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+  letter-spacing: 1px;
+  margin-top: 26px;
+}
     `
+
+    export const Styledadvertisement = styled.div`
+   
+position: absolute;
+width: 28%;
+height: 84%;
+float: right;
+right: 0;
+top: 8%;
+
+background: #FFFFFF;
+border: 1px solid #535353;
+box-sizing: border-box;
+    @media (max-width: 767px) {
+    display:none
+    }
+    h1{
+      margin: 0;
+      font-size: 24px;
+      font-weight: 500;
+    }
+    
+    `
+    export const Styledpostcoment = styled.div`
+   position:dyntatic;
+    width: 100%;
+    height: 42px;
+    left: 404px;
+    margin-top: 27px;
+    
+    background: #FFFFFF;
+    border: 1px solid #A1A1A1;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+    @media (max-width: 767px) {
+      
+    width:auto;
+    height:auto;
+    
+    }
+    textarea{
+      width: 80%;
+      height: 90%;
+     margin-left: 5%;
+      left: 348px;
+      margin-top: 2px;
+      text-align: left;
+      font-size: 14px;
+      font-weight: 500;
+     
+      background: #F6F6F6;
+      letter-spacing: 1px;
+   border-radius: 10px;
+      box-sizing: border-box;
+      -webkit-box-shadow: 0 -1px 0 rgba(0,0,0,.1);
+      box-shadow: 0 -1px 0 rgba(0,0,0,.1);
+      -webkit-transition: all .3s;
+      transition: all .3s;
+    }
+    button{
+      float: right;
+border-radius:100px;
+margin-top: 3px;
+margin-right: 10px;
+width: 90px;
+height: 30px;
+left: 806px;
+right: 0;
+top: 805px;
+
+background: #03BFD3;
+    }
+`
