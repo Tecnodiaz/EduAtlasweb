@@ -8,7 +8,7 @@ import axios from 'axios';
 function Home() {
     const [tareas, setTareas] = useState([])
  
-
+// run npm run dev to start the server
     const getTareas = async () => {
         try {
             const response = await axios.get(' http://localhost:3001/tareas');
