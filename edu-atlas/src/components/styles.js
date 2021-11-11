@@ -104,11 +104,12 @@ border-radius: 8px;
       color: #666;
       text-transform: uppercase;
       letter-spacing: 1px;
-      
+      cursor: pointer;
       &:last-child {
         border-bottom: none;
       
       }
+      
     
       
       
@@ -220,6 +221,16 @@ h1{
   margin-left: 20px;
   margin-top: 20px;
 }
+h2{
+  float : right;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+  letter-spacing: 1px;
+ margin-top: -30px;
+ cursor: pointer;
+}
 p{
   margin: 0;
   font-size: 14px;
@@ -251,13 +262,14 @@ box-sizing: border-box;
       font-weight: 500;
     }
     
+    
     `
     export const Styledpostcoment = styled.div`
    position:dyntatic;
     width: 100%;
     height: 42px;
     left: 404px;
-    margin-top: 27px;
+    margin-top: 20px;
     
     background: #FFFFFF;
     border: 1px solid #A1A1A1;
@@ -273,13 +285,13 @@ box-sizing: border-box;
     textarea{
       width: 80%;
       height: 90%;
-     margin-left: 5%;
+     margin-left: 3%;
       left: 348px;
       margin-top: 2px;
       text-align: left;
       font-size: 14px;
       font-weight: 500;
-     
+      border: 1px solid #A1A1A1
       background: #F6F6F6;
       letter-spacing: 1px;
    border-radius: 10px;
@@ -291,15 +303,29 @@ box-sizing: border-box;
     }
     button{
       float: right;
-border-radius:100px;
-margin-top: 3px;
-margin-right: 10px;
-width: 90px;
-height: 30px;
+border:none;
+border-radius: 10px;
+margin-top: 0px;
+
+width: 60px;
+height: 39px;
 left: 806px;
 right: 0;
 top: 805px;
 
 background: #03BFD3;
+    }
+    a{
+     
+      float: left;
+      margin-top: -1px;
+      margin-left: 20px;
+      font-size: 30px;
+      font-weight: 500;
+      color: #666;
+      letter-spacing: 1px;
+      cursor: pointer;
+
+          
     }
 `
