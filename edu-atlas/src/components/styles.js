@@ -119,7 +119,7 @@ border-radius: 8px;
     `
 
     export const Styledposter = styled.div`
-    position: fixed;
+    position: absolute;
 width: 752px;
 height: 29%;
 left: 328px;
