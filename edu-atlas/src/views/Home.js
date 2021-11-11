@@ -2,11 +2,42 @@ import  '../index.css';
 import { Styledtopnavbar,Tareashome,Styledposter, Styledposts,Styledadvertisement,Styledpostcoment } from '../components/styles'
 import  BottomNavbar  from '../components/BottomNavbar'
 import{AiOutlineSend} from 'react-icons/ai'
+import { useEffect,useState} from 'react';
+import axios from 'axios';
+
 function Home() {
+    const [tareas, setTareas] = useState([])
+ 
+
+    const getTareas = async () => {
+        try {
+            const response = await axios.get(' http://localhost:3001/tareas');
+           setTareas(response.data)
+            
+          } catch (error) {
+            console.error(error);
+          }
+    
+    }
+
+
+    useEffect   (() => {
+       
+        getTareas()
+           
+    }, []);
+
+    //id generator that takes the last id and adds 1
+    let id = 0;
+    const idGenerator = (id) =>{
+        let newId = id + 1
+        return newId
+      }
+
             return(
                 <>
                 <Styledtopnavbar>
-                <div class="topnav" id="myTopnav">
+                <div className="topnav" id="myTopnav">
                   <a href="#home" >Tareas</a>
                   
                   <a href="#contact" >Calificaciones</a>
@@ -18,11 +49,32 @@ function Home() {
                 
                     <Tareashome>
                       <h1>Tareas del mes</h1>
-                      <ul> 
-                        <li >Ejercicios de pitagoras</li>
-                        <li>2021-08-30</li>
-                        <li >30pts</li>
-                         </ul>
+                   
+
+                        
+                                
+                       
+                          
+                    
+                        
+                        
+                        <ul>
+                            <>
+                        {tareas.map(
+                                tarea => (
+                        <li key={tarea.id}>{tarea.nombre}</li>
+                        
+                        ))}
+                        </>
+                        </ul>
+                        
+                    
+                                
+                           
+                           
+                         
+                         
+                        
                     </Tareashome>
                 <Styledposter>
                 <h1>Comunicate</h1>
@@ -40,7 +92,7 @@ function Home() {
                     <Styledpostcoment>
                     <a href="http://tecnodiaz.com">JP</a>
                     <textarea placeholder="Escribe tu comentario" />
-                    <button type="submit"><AiOutlineSend color="white" size="small" /></button>
+                    <button type="submit"><AiOutlineSend color="white" size="medium" /></button>
                     </Styledpostcoment>
                 </Styledposts>
                 <Styledadvertisement>
