@@ -1,11 +1,31 @@
 import  '../index.css';
-import { Styledtopnavbar,Tareashome,Styledposter, Styledposts,Styledadvertisement,Styledpostcoment } from '../components/styles'
+import { Styledtopnavbar,Styledposter, Styledposts,Styledadvertisement,Styledpostcoment } from '../components/styles'
 import  BottomNavbar  from '../components/BottomNavbar'
 import{AiOutlineSend} from 'react-icons/ai'
 import { useEffect,useState} from 'react';
 import axios from 'axios';
+import HomeWorkComponent from '../components/HomeWorkComponent'
+import {
+    BrowserRouter as Router,
+    Switch, Route, Link
+  } from "react-router-dom"
+import VerTareas from './VerTareas'
+
 
 function Home() {
+  const [page, setPage] = useState('home')
+
+  const toPage = (page) => (event) => {
+     event.preventDefault()
+     setPage(page)
+   }
+ 
+   const content = () => {
+     if (page === 'tareas') {
+       return <VerTareas />
+     
+   }
+   }
     const [tareas, setTareas] = useState([])
  
 // run npm run dev to start the server
@@ -27,55 +47,26 @@ function Home() {
            
     }, []);
 
-    //id generator that takes the last id and adds 1
-    let id = 0;
-    const idGenerator = (id) =>{
-        let newId = id + 1
-        return newId
-      }
+    const mrleft = {
+        marginLeft: '300px'
+        
+    }
 
             return(
                 <>
+               
                 <Styledtopnavbar>
                 <div className="topnav" id="myTopnav">
-                  <a href="#home" >Tareas</a>
+                  <li  onClick={toPage('tareas')}>Tareas</li>
                   
-                  <a href="#contact" >Calificaciones</a>
+                  <li onClick={toPage('tareas')}>Calificaciones</li> 
                   
                  
                     
                 </div>
                     </Styledtopnavbar>
                 
-                    <Tareashome>
-                      <h1>Tareas del mes</h1>
-                   
-
-                        
-                                
-                       
-                          
-                    
-                        
-                        
-                        <ul>
-                            <>
-                        {tareas.map(
-                                tarea => (
-                        <li key={tarea.id}>{tarea.nombre}</li>
-                        
-                        ))}
-                        </>
-                        </ul>
-                        
-                    
-                                
-                           
-                           
-                         
-                         
-                        
-                    </Tareashome>
+                    <HomeWorkComponent tareas={tareas}/>
                 <Styledposter>
                 <h1>Comunicate</h1>
                 <textarea placeholder="Escribe el comunicado" />
@@ -101,7 +92,9 @@ function Home() {
                             </Styledadvertisement> 
 
                 <BottomNavbar/>
+                {content()}
                 </>
             )
-}
+        }
+
 export default  Home
