@@ -1,6 +1,7 @@
 import {  Nav,Navbar} from 'react-bootstrap';
 import  '../index.css';
 import { Styledbottomnavbar, } from './styles'
+import {Link} from 'react-router-dom';
 
 function BottomNavbar() {
   return (
@@ -10,7 +11,7 @@ function BottomNavbar() {
     <Styledbottomnavbar>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className="sticky-nav">
   
-  <Navbar.Brand href="#home">Home</Navbar.Brand>
+  <Link className="navbar-brand"to="/">Home</Link>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className='ml-auto'>

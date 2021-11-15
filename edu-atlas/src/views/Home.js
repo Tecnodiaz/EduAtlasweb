@@ -6,29 +6,16 @@ import { useEffect,useState} from 'react';
 import axios from 'axios';
 import HomeWorkComponent from '../components/HomeWorkComponent'
 import {
-    BrowserRouter as Router,
-    Switch, Route, Link
+ Link
   } from "react-router-dom"
-import VerTareas from './VerTareas'
+
 
 
 function Home() {
-  const [page, setPage] = useState('home')
-
-  const toPage = (page) => (event) => {
-     event.preventDefault()
-     setPage(page)
-   }
- 
-   const content = () => {
-     if (page === 'tareas') {
-       return <VerTareas />
-     
-   }
-   }
+  
     const [tareas, setTareas] = useState([])
  
-// run npm run dev to start the server
+
     const getTareas = async () => {
         try {
             const response = await axios.get(' http://localhost:3001/tareas');
@@ -47,19 +34,17 @@ function Home() {
            
     }, []);
 
-    const mrleft = {
-        marginLeft: '300px'
-        
-    }
+   
 
             return(
                 <>
                
                 <Styledtopnavbar>
                 <div className="topnav" id="myTopnav">
-                  <li  onClick={toPage('tareas')}>Tareas</li>
+                <Link to="/tareas">Tareas</Link>
+                   <Link to="/" s>Calificaciones</Link>
                   
-                  <li onClick={toPage('tareas')}>Calificaciones</li> 
+                  
                   
                  
                     
@@ -92,7 +77,7 @@ function Home() {
                             </Styledadvertisement> 
 
                 <BottomNavbar/>
-                {content()}
+             
                 </>
             )
         }
