@@ -7,7 +7,7 @@ export const Styledbottomnavbar = styled.nav`
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 60px;
+  height: 56px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,6 +72,7 @@ export const Styledbottomnavbar = styled.nav`
   
   width: 258px;
   height: 70%;
+
   background-color: #fff;
  
   
@@ -201,17 +202,24 @@ transition: all .3s;
 `
   
 export const Styledposts = styled.div`
-position: absolute;
+
+  
+margin-top:400px;
+margin-bottom: -325px;
 width: 755px;
 height: 259px;
 left: 325px;
 top: 50%;
+
+position :relative;
 
 background: #FFFFFF;
 border: 1px solid #AFAFAF;
 box-sizing: border-box;
 border-radius: 13px;
 text-align: center;
+    
+
 
 @media (max-width: 767px) {
   left: auto;
@@ -243,7 +251,14 @@ h2{
   display: none;
  }
 }
-p{
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+      
+}
+li{
   margin: 0;
   font-size: 14px;
   font-weight: 500;
@@ -255,7 +270,7 @@ p{
 
     export const Styledadvertisement = styled.div`
    
-position: absolute;
+position: fixed;
 width: 28%;
 height: 84%;
 float: right;
@@ -266,7 +281,7 @@ background: #FFFFFF;
 border: 1px solid #535353;
 box-sizing: border-box;
     @media (max-width: 767px) {
-    display:none
+      display: none;
     }
     h1{
       margin: 0;
@@ -281,7 +296,7 @@ box-sizing: border-box;
     width: 100%;
     height: 42px;
     left: 404px;
-    margin-top: 20px;
+    margin-top: 119px;
     
     background: #FFFFFF;
     border: 1px solid #A1A1A1;
