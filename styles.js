@@ -66,7 +66,7 @@ export const Styledbottomnavbar = styled.nav`
 
   export const Styledtareashome=styled.div`
   overflow:auto;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   
@@ -185,7 +185,7 @@ background: #03BFD3;
 border-radius: 6px;
 
 border:none
-color: #fff;
+
 font-size: 14px;
 font-weight: 500;
 letter-spacing: 1px;
@@ -197,21 +197,29 @@ transition: all .3s;
   width:auto;
 }
 
+button:disabled,
+button[disabled]{
+  background: #ccc;
+  cursor: not-allowed;
+
+}
+
+
     }
     
 `
   
 export const Styledposts = styled.div`
 
-  
-margin-top:400px;
-margin-bottom: -325px;
 width: 755px;
 height: 259px;
-left: 325px;
+left: 328px;
 top: 50%;
 
-position :relative;
+margin: 0 auto;
+margin-top: 400px;
+margin-left: 85px;
+margin-bottom: -350px;
 
 background: #FFFFFF;
 border: 1px solid #AFAFAF;
@@ -292,11 +300,12 @@ box-sizing: border-box;
     
     `
     export const Styledpostcoment = styled.div`
-   position:dyntatic;
-    width: 100%;
+   position:absolute;
+    width: 754px;
     height: 42px;
     left: 404px;
-    margin-top: 119px;
+    margin-top: 120px;
+    margin-left: -73px;
     
     background: #FFFFFF;
     border: 1px solid #A1A1A1;
