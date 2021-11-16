@@ -7,7 +7,7 @@ export const Styledbottomnavbar = styled.nav`
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 60px;
+  height: 56px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,12 +66,13 @@ export const Styledbottomnavbar = styled.nav`
 
   export const Styledtareashome=styled.div`
   overflow:auto;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   
   width: 258px;
   height: 70%;
+
   background-color: #fff;
  
   
@@ -184,7 +185,7 @@ background: #03BFD3;
 border-radius: 6px;
 
 border:none
-color: #fff;
+
 font-size: 14px;
 font-weight: 500;
 letter-spacing: 1px;
@@ -196,22 +197,37 @@ transition: all .3s;
   width:auto;
 }
 
+button:disabled,
+button[disabled]{
+  background: #ccc;
+  cursor: not-allowed;
+
+}
+
+
     }
     
 `
   
 export const Styledposts = styled.div`
-position: absolute;
+
 width: 755px;
 height: 259px;
-left: 325px;
+left: 328px;
 top: 50%;
+
+margin: 0 auto;
+margin-top: 400px;
+margin-left: 85px;
+margin-bottom: -350px;
 
 background: #FFFFFF;
 border: 1px solid #AFAFAF;
 box-sizing: border-box;
 border-radius: 13px;
 text-align: center;
+    
+
 
 @media (max-width: 767px) {
   left: auto;
@@ -243,7 +259,14 @@ h2{
   display: none;
  }
 }
-p{
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+      
+}
+li{
   margin: 0;
   font-size: 14px;
   font-weight: 500;
@@ -255,7 +278,7 @@ p{
 
     export const Styledadvertisement = styled.div`
    
-position: absolute;
+position: fixed;
 width: 28%;
 height: 84%;
 float: right;
@@ -266,7 +289,7 @@ background: #FFFFFF;
 border: 1px solid #535353;
 box-sizing: border-box;
     @media (max-width: 767px) {
-    display:none
+      display: none;
     }
     h1{
       margin: 0;
@@ -277,11 +300,12 @@ box-sizing: border-box;
     
     `
     export const Styledpostcoment = styled.div`
-   position:dyntatic;
-    width: 100%;
+   position:absolute;
+    width: 754px;
     height: 42px;
     left: 404px;
-    margin-top: 20px;
+    margin-top: 120px;
+    margin-left: -73px;
     
     background: #FFFFFF;
     border: 1px solid #A1A1A1;
