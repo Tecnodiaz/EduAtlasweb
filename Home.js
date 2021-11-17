@@ -1,11 +1,11 @@
 import  '../index.css';
-import { Styledtopnavbar,Styledposter,Styledadvertisement,Styledtareashome,Styledposts,Styledpostcoment } from '../components/styles'
+import { Styledtopnavbar,Styledposter,Styledadvertisement,Styledtareashome,Styledposts} from '../components/styles'
 import  BottomNavbar  from '../components/BottomNavbar'
-import Posts from '../components/Posts'
+import PostComponent from '../components/PostComponent'
 import { useEffect,useState} from 'react';
 import tareasService from '../services/tareas'
 import Tareas from '../components/Tareas'
-import{AiOutlineSend} from 'react-icons/ai'
+
 import postService from '../services/post'
 import {
  Link
@@ -20,6 +20,7 @@ function Home() {
     ''
   ) 
   const [posts, setPost] = useState([])
+ 
   
 
     
@@ -58,7 +59,6 @@ function Home() {
       postService.addPost(postObject).then(response => {
         
         setPost([...posts, response])
-    
       setNewPost('')
       })
     }
@@ -68,7 +68,13 @@ function Home() {
      
         setNewPost(event.target.value)
       }
-      
+     
+    const mrbottom2 = {
+      marginBottom: '-350px',
+    marginTop: '307px',
+
+    }
+      //para ponerle las letras a la vaina de comentar toma la primera letra del nombre del usuario y la del apellido con la primera letra en mayuscula con charAt(0)
     
             return(
                
@@ -100,31 +106,48 @@ function Home() {
 
                   <h1>Comunicate</h1>
                   <form onSubmit={addPost}>
-                    <textarea placeholder="Escribe el comunicado" value={newPost}
-                      onChange={handlePostChange} />
-                    <button disabled={!newPost||newPost===''}type="submit">Publicar</button>
+                    <textarea
+                     placeholder="Escribe el comunicado" 
+                    value={newPost}
+                      onChange={handlePostChange}
+                      maxLength={465}
+                       />
+                      		
+
+                    <button 
+                    type="submit"
+                    disabled={!newPost||newPost===''}
+                   
+                    >Publicar</button>
                   </form>
                 </Styledposter>
 
                 <div className="mr-bottom">
                 {posts.map(post => (
-                  
-                  <Styledposts key={post.id} >
-                    <Posts  post={post} />
+                  <div key={post.id} >
+                  <Styledposts >
+                    <h1>{post.usuario}</h1>
+                    <h2>Comentarios</h2>
 
-                    <Styledpostcoment>
-                      <a href="http://tecnodiaz.com">JP</a>
-                      <textarea placeholder="Escribe tu comentario" />
-                      <button type="submit">
-                        <AiOutlineSend color="white" size="medium" />
-                      </button>
-                    </Styledpostcoment>
+                    <p>
+                      {post.descripcion}
+                    </p>
+                  
+
                   </Styledposts>
-                 
+                    <div style={mrbottom2}> 
+                   
+                  <PostComponent />
+                  </div>
+                  </div>
+                  
                 ))}
                 </div>
-              
-              <BottomNavbar />
+
+
+
+              <BottomNavbar/>
+             
               
             </div>
              

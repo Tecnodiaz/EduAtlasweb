@@ -19,7 +19,7 @@
     {
       "id": "3",
       "nombre": "Tarea 3",
-      "descripcion": "Descripcion de la tarea 3",
+      "descripcion": "Descripcion de la tarea 4",
       "fecha": "01/01/2020",
       "hora": "10:00",
       "estado": "Pendiente"
@@ -56,7 +56,7 @@
   ],
   "posts": [
     {
-      "id": "8",
+      "id": "1",
       "titulo": "Titulo del post",
       "descripcion": "Descripcion del post",
       "fecha": "01/01/2020",
@@ -64,9 +64,9 @@
       "usuario": "Usuario 1"
     },
     {
-      "id": "9",
+      "id": "2",
       "titulo": "Titulo del post",
-      "descripcion": "Descripcion de la creta de tu mama",
+      "descripcion": "Descripcion ",
       "fecha": "01/01/2020",
       "hora": "10:00",
       "usuario": "Usuario 2"
@@ -82,7 +82,12 @@
       "fecha": "2021-11-16T15:43:37.295Z",
       "usuario": "Daniel",
       "id": 4
+    },
+    {
+      "descripcion": "la creta e tu mama la creta e tu mamala creta e tu mamala creta e tu mamala creta e tu mamala creta e tu mamala creta e tu mamala creta e tu mamala creta e tu mamala creta e tu mamala creta e tu mama",
+      "fecha": "2021-11-17T16:14:41.380Z",
+      "usuario": "Daniel",
+      "id": 5
     }
-   
   ]
 }
