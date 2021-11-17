@@ -1,5 +1,7 @@
 import React from 'react'
 
+
+
 function Posts({post}) {
     const ulstyle = {
         listStyle: 'none',
@@ -16,16 +18,15 @@ function Posts({post}) {
         <h2>Comentarios</h2>
        
            
-
- <ul style={ulstyle}>
+<ul style={ulstyle}>
+ 
         <li>
             {post.descripcion}
          
 
         </li>
-     
-       
         </ul>
+      
        
        
             
