@@ -49,7 +49,7 @@ function Home() {
       event.preventDefault()
       const postObject = {
         descripcion: newPost,
-        fecha: new Date().toISOString(),
+        fecha: new Date().toLocaleTimeString()+' '+new Date().toLocaleDateString(),
         usuario: 'Daniel',
         id: posts.length + 1,
       }
@@ -74,6 +74,26 @@ function Home() {
     marginTop: '307px',
 
     }
+    const ulstyle = {
+      listStyle: 'none',
+      padding: '0',
+      margin: '0 ',
+ 
+   marginRight: '100px',
+     
+    }
+
+    const li = {
+      display: 'flex',
+  
+      margin: '0',
+      padding: '0',
+      
+
+    
+    }
+    
+    
       //para ponerle las letras a la vaina de comentar toma la primera letra del nombre del usuario y la del apellido con la primera letra en mayuscula con charAt(0)
     
             return(
@@ -110,7 +130,7 @@ function Home() {
                      placeholder="Escribe el comunicado" 
                     value={newPost}
                       onChange={handlePostChange}
-                      maxLength={465}
+                      
                        />
                       		
 
@@ -125,21 +145,36 @@ function Home() {
                 <div className="mr-bottom">
                 {posts.map(post => (
                   <div key={post.id} >
-                  <Styledposts >
+                   
+                
+                  <Styledposts >  
+               
+                   
                     <h1>{post.usuario}</h1>
-                    <h2>Comentarios</h2>
-
+                    
+                  
                     <p>
                       {post.descripcion}
                     </p>
                   
-
-                  </Styledposts>
-                    <div style={mrbottom2}> 
                    
-                  <PostComponent />
+                  </Styledposts>
+                <div>
+                <ul style={ulstyle}>
+                    <li style={li}>jjjj</li>
+                  
+                    </ul>
+
+                </div>
+                   
+                   
+                  <div style={mrbottom2}> 
+                 
+<PostComponent />
+  </div>
+                   
                   </div>
-                  </div>
+                 
                   
                 ))}
                 </div>
