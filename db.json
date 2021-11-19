@@ -75,37 +75,105 @@
       "descripcion": "yo soy una perra en calor",
       "fecha": "2021-11-16T15:37:56.092Z",
       "usuario": "Daniel",
-      "id": 3
+      "id": "3"
     },
     {
       "descripcion": "creta",
       "fecha": "2021-11-16T15:43:37.295Z",
       "usuario": "Daniel",
-      "id": 4
+      "id": "4"
     },
     {
       "descripcion": "la creta e tu mama la creta e tu mamala creta e tu mamala creta e tu mamala creta e tu mamala creta e tu mamala creta e tu mamala creta e tu mamala creta e tu mamala creta e tu mamala creta e tu mama",
       "fecha": "2021-11-17T16:14:41.380Z",
       "usuario": "Daniel",
-      "id": 5
+      "id": "5"
     },
     {
       "descripcion": "hjh",
       "fecha": "9:55:03 AM 11/18/2021",
       "usuario": "Daniel",
-      "id": 6
+      "id":"6"
     },
     {
       "descripcion": "v\"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id\"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.\"\n\n1914 translation by H. Rackham\n\"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.\"\n\n est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta no\"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis p",
       "fecha": "12:57:26 PM 11/18/2021",
       "usuario": "Daniel",
-      "id": 7
+      "id": "7"
     },
     {
       "descripcion": "v\"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id\"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.\" 1914 translation by H. Rackham",
       "fecha": "2:58:05 PM 11/18/2021",
       "usuario": "Daniel",
-      "id": 8
-    }
-  ]
+      "id":   "8"
+      
+      }],
+      "comments": [
+        {
+          "id": "1",
+          "descripcion": "comentario 1",
+          "fecha": "01/01/2020",
+          "hora": "10:00",
+          "usuario": "Usuario 7",
+          "postId": "7"
+        },
+        {
+          "id": "2",
+          "descripcion": "comentario 2",
+          "fecha": "01/01/2020",
+          "hora": "10:00",
+          "usuario": "Usuario 6",
+          "postId": "6"
+        },
+        {
+          "id": "2",
+          "descripcion": "comentario creta",
+          "fecha": "01/01/2020",
+          "hora": "10:00",
+          "usuario": "Usuario 6",
+          "postId": "6"
+        },
+        {
+          "id": "3",
+          "descripcion": "comentario 3",
+          "fecha": "01/01/2020",
+          "hora": "10:00",
+          "usuario": "Usuario 5",
+          "postId": "5"
+        },
+        {
+          "id": "4",
+          "descripcion": "comentario 4",
+          "fecha": "01/01/2020",
+          "hora": "10:00",
+          "usuario": "Usuario 4",
+          "postId": "4"
+        },
+        {
+          "id": "5",
+          "descripcion": "comentario 5",
+          "fecha": "01/01/2020",
+          "hora": "10:00",
+          "usuario": "Usuario 3",
+          "postId": "3"
+        },
+        {
+          "id": "6",
+          "descripcion": "comentario 6",
+          "fecha": "01/01/2020",
+          "hora": "10:00",
+          "usuario": "Usuario 2",
+          "postId": "2"
+          
+        },
+        {
+          "id": "7",
+          "descripcion": "comentario 7",
+          "fecha": "01/01/2020",
+          "hora": "10:00",
+          "usuario": "Usuario 1",
+          "postId": "1"
+        }]
+
 }
+  
