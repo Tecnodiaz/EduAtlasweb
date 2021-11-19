@@ -21,6 +21,9 @@ function Home() {
    const [newPost, setNewPost] = useState(
     ''
   ) 
+  const [newComment, setNewComment] = useState(
+    ''
+  ) 
   const [comments, setComments] = useState([])
   const [posts, setPost] = useState([])
  
@@ -73,11 +76,27 @@ function Home() {
       })
     }
     }
+    const addComment = (event) => {
+      event.preventDefault()
+      const commentObject = {
+        descripcion: newComment,
+        fecha: new Date().toLocaleTimeString()+' '+new Date().toLocaleDateString(),
+        usuario: 'Daniel',
+        id: comments.length + 1
+
+    }
+  }
 
       const handlePostChange = (event) => {
      
         setNewPost(event.target.value)
       }
+
+      const handleCommentChange = (event) => {
+     console.log(event.target.value)
+        setNewComment(event.target.value)
+      }
+     
      
     const mrbottom2 = {
       marginBottom: '-350px',
@@ -160,7 +179,7 @@ function Home() {
                    
                   <div style={mrbottom2}> 
                  
-<PostComponent />
+<PostComponent onChange={handleCommentChange} addComment={addComment} newComment={newComment} postId={post.id} />
   </div>
                    
                   </div>

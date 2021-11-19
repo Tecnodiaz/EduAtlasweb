@@ -372,7 +372,7 @@ box-sizing: border-box;
      }
      textarea{
        width: 80%;
-       height: 90%;
+       height: 37px;
       margin-left: 3%;
        left: 348px;
        margin-top: 2px;
