@@ -263,12 +263,14 @@ h2{
   
 
 p{
+  border-bottom: 1px solid #e5e5e5;
   margin: 0;
   font-size: 14px;
   font-weight: 500;
   color: #666;
   letter-spacing: 1px;
   width:95%;
+  min-height: 100px;
   height:auto;
   margin-top: 30px;
   margin-left:20px;

@@ -5,6 +5,8 @@ import PostComponent from '../components/PostComponent'
 import { useEffect,useState} from 'react';
 import tareasService from '../services/tareas'
 import Tareas from '../components/Tareas'
+import Comments from '../components/Comments'
+import commentService from '../services/comments'
 
 import postService from '../services/post'
 import {
@@ -19,6 +21,7 @@ function Home() {
    const [newPost, setNewPost] = useState(
     ''
   ) 
+  const [comments, setComments] = useState([])
   const [posts, setPost] = useState([])
  
   
@@ -42,6 +45,13 @@ function Home() {
         )
       
     }, [])
+
+    useEffect(() => {
+      commentService.getComments().then(comments => {
+          setComments(comments)
+      })
+  
+  }, [])
    
   
     
@@ -74,24 +84,7 @@ function Home() {
     marginTop: '307px',
 
     }
-    const ulstyle = {
-      listStyle: 'none',
-      padding: '0',
-      margin: '0 ',
  
-   marginRight: '100px',
-     
-    }
-
-    const li = {
-      display: 'flex',
-  
-      margin: '0',
-      padding: '0',
-      
-
-    
-    }
     
     
       //para ponerle las letras a la vaina de comentar toma la primera letra del nombre del usuario y la del apellido con la primera letra en mayuscula con charAt(0)
@@ -157,15 +150,12 @@ function Home() {
                       {post.descripcion}
                     </p>
                   
+                <Comments comments={comments} post={post} />
                    
                   </Styledposts>
-                <div>
-                <ul style={ulstyle}>
-                    <li style={li}>jjjj</li>
-                  
-                    </ul>
+              
 
-                </div>
+                
                    
                    
                   <div style={mrbottom2}> 
