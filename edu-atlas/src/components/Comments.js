@@ -6,7 +6,7 @@ function Comments({ comments,post}) {
     return (
         
         comments.filter(comment => comment.postId === post.id).map(comment => ( 
-            <ul key={post.id} style={ulstyle}>
+            <ul key={comment.id} style={ulstyle}>
             <li style={li}>
               {comment.usuario}
             <br/>
