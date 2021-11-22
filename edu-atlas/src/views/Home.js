@@ -1,12 +1,13 @@
 import  '../index.css';
-import { Styledtopnavbar,Styledposter,Styledadvertisement,Styledtareashome,Styledposts} from '../components/styles'
+import { Styledtopnavbar,Styledposter,Styledadvertisement,Styledtareashome,Styledposts,Styledpostcoment} from '../components/styles'
 import  BottomNavbar  from '../components/BottomNavbar'
-import PostComponent from '../components/PostComponent'
+//import PostComponent from '../components/PostComponent'
 import { useEffect,useState} from 'react';
 import tareasService from '../services/tareas'
 import Tareas from '../components/Tareas'
 import Comments from '../components/Comments'
 import commentService from '../services/comments'
+import{AiOutlineSend} from 'react-icons/ai'
 
 import postService from '../services/post'
 import {
@@ -76,16 +77,7 @@ function Home() {
       })
     }
     }
-    const addComment = (event) => {
-      event.preventDefault()
-      const commentObject = {
-        descripcion: newComment,
-        fecha: new Date().toLocaleTimeString()+' '+new Date().toLocaleDateString(),
-        usuario: 'Daniel',
-        id: comments.length + 1
-
-    }
-  }
+ 
 
       const handlePostChange = (event) => {
      
@@ -93,7 +85,7 @@ function Home() {
       }
 
       const handleCommentChange = (event) => {
-     console.log(event.target.value)
+  
         setNewComment(event.target.value)
       }
      
@@ -179,7 +171,52 @@ function Home() {
                    
                   <div style={mrbottom2}> 
                  
-<PostComponent onChange={handleCommentChange} addComment={addComment} newComment={newComment} postId={post.id} />
+                  <Styledpostcoment>
+        <a href="http://tecnodiaz.com">JP</a>
+       
+       
+        <form onSubmit={(event) => {
+           event.preventDefault()
+           const commentObject = {
+            id: comments.length + 1,
+            
+             descripcion: newComment,
+             fecha: new Date().toLocaleDateString(),
+             hora: new Date().toLocaleTimeString(),
+             usuario: 'Daniel',
+             postId: post.id,
+             
+              
+            }
+            if(newComment === undefined || newComment === ''){
+              alert('No puedes dejar el campo vacio')
+            }
+            else if (newComment.length > 200){
+              alert('El comentario no puede tener mas de 200 caracteres')
+            }
+          
+           
+
+            
+            else{
+            commentService.addComment(commentObject).then(response => {
+              setComments([...comments, response])
+              setNewComment('')
+            })
+          }
+
+
+       }}>
+        <textarea
+         placeholder="Escribe tu comentario" 
+        onChange={handleCommentChange}
+        value={newComment}
+        />
+        <button type="submit" disabled={!newComment||newComment === ''}>
+          <AiOutlineSend color="white" size="medium"  />
+        </button>
+        </form>
+      </Styledpostcoment>
   </div>
                    
                   </div>

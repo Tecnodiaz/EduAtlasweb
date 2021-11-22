@@ -7,8 +7,15 @@ const getComments = async () => {
     const response = await request
     return response.data
     }
+
+    const addComment = async (data) => {
+        const request = axios.post(URL,data)
+        const response = await request
+        return response.data
+    }
     const exportedMethods = {
         getComments,
+        addComment
         
     }
     export default exportedMethods
