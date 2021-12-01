@@ -17,7 +17,7 @@ function BottomNavbar() {
     <Nav className='ml-auto'>
       <Nav.Link href="#features" >Libreria</Nav.Link>
       <Nav.Link href="#pricing">Asistencia</Nav.Link>
-      <Nav.Link href="#deets">Horario</Nav.Link>
+      <Link className="nav-link" to="/horario">Horario</Link>
       <Nav.Link href="#Perfil">Perfil</Nav.Link>
     </Nav>
    

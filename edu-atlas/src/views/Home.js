@@ -194,8 +194,7 @@ function Home() {
             else if (newComment.length > 200){
               alert('El comentario no puede tener mas de 200 caracteres')
             }
-          
-           
+         
 
             
             else{
@@ -203,7 +202,7 @@ function Home() {
               setComments([...comments, response])
               setNewComment('')
             })
-          }
+          }       
 
 
        }}>

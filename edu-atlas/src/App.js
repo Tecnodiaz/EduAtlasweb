@@ -5,7 +5,7 @@ import {
   Switch, Route, 
 } from "react-router-dom"
 import VerTareas from '../src/views/VerTareas'
-
+import Horario from '../src/views/Horario'
   
 function App() {
   
@@ -18,9 +18,13 @@ function App() {
         <Route path="/tareas">
           <VerTareas />
         </Route>
+        <Route path="/horario">
+          <Horario/>
+        </Route>
         <Route path="/">
           <Home />
         </Route>
+       
         
         
       </Switch> 
