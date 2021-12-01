@@ -128,7 +128,7 @@ border-radius: 8px;
     position: absolute;
 width: 752px;
 height: 29%;
-left: 328px;
+left: 375px;
 top: 12%;
 
 background: #FFFFFF;
